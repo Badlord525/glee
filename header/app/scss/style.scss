@@ -174,10 +174,12 @@
 }
 
 .top-slider {
-    background-image: url(../images/slider-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 220px;
+    &__bg {
+        background-image: url(../images/slider-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 220px;
+    }
     &__inner{
         max-width: 1200px;
         margin: 0 auto;
@@ -236,6 +238,96 @@
         }
     }
 }
+.info {
+    background-color: #fef7f0;
+    display: flex;
+    justify-content: space-between;
+    &__items {
+        display: flex;
+        padding: 50px 140px 40px 140px ;
+    }
+    &__items + .info__items {
+        border-left: 1px solid #585858;
+    }
+    &__item-images {
+        margin-right: 20px;
+        padding-top: 10px;
+    }
+    &__item-title {
+        font-size: 18px;
+        line-height: 40px;
+        @extend %dmsans-700;
+    }
+    &__item-text {
+        font-size: 16px;
+        line-height: 30px;
+        @extend %dmsans-400;
+    }
+}
+.products {
+    padding-top: 65px;
+    background-color: #fafafa;
+    &__title {
+        text-align: center;
+    }
+}
+.title {
+    margin-bottom: 30px;
+    font-size: 36px;
+    @extend %dmsans-700;
+}
+.categories {
+    display: flex;
+    justify-content: center;
+    &__list {
+        margin-bottom: 70px;
+        color: #8b8b8b;
+        font-size: 16px;
+        @extend %dmsans-700;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+    }
+    &__list + .categories__list {
+        margin-left: 30px;
+    }
+}
+.products__items {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 30px;
+    padding-bottom: 180px;
+}
+.products__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 270px;
+    text-align: center;
+    background-color:  #fff;
+    padding: 30px 30px 40px;
+    &-images {
+        margin-bottom: 60px;
+    }
+    &-title {
+        @extend %dmsans-700;
+        font-size: 16px;
+    }
+    &-text {
+        @extend %dmsans-700;
+        font-size: 16px;
+        color: #a3bbc8;
+    }
+}
+.images__products {
+    max-width: 170px;
+    height: 210px;
+}
+.mixitup-control-active {
+    color: #1a1a1a;
+}
+
 
 
 
