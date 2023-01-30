@@ -511,7 +511,7 @@
         padding-bottom: 80px;
         &-items {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
 
         }
     }
@@ -520,10 +520,9 @@
 
 .modal {
     padding-top: 110px;
-    margin-bottom: 110px;
     &-container {
         max-width: 470px;
-        margin: 0 auto;
+        margin: 0 auto 120px;
     }
     &__label {
        
@@ -574,6 +573,10 @@
         display: block;
         width: 100%;
         padding: 20px 0;
+    }
+    &__bottom {
+        background-color: #fef7f0;
+        padding: 80px 0;
     }
 }
 
