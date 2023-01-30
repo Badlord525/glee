@@ -173,6 +173,19 @@
     }
 }
 
+.top {
+    background-color: #edf1f4;
+    padding: 30px 0;
+    text-align: center;
+    
+    &__title {
+        color: #222933;
+        font-size: 36px;
+        line-height: 24px;
+        @extend %raleway-600;
+        margin-bottom: 10px;
+    }
+}
 .top-slider {
     &__bg {
         background-image: url(../images/slider-bg.jpg);
@@ -428,7 +441,82 @@
     align-items: center;
     margin-bottom: 100px;
 }
+.design {
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        
+        margin-bottom: 40px;
+        &-title {
+            font-size: 36px;
+            color: #191919;
+            @extend %dmsans-700;
+        }
+        &-link {
+            font-size: 16px;
+            color: #191919;
+            @extend %dmsans-700; 
+        }
+        &-link::after {
+            content: '>';
+            margin-left: 10px;
+        }
+    }
+    &__images-items {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 30px;
+    }
+    &__description{
+        background-color: #fef7f0;
+        &-items {
+          display: flex;
+          justify-content: space-between;
+          column-gap: 30px;  
+        }
+        &-item {
+            padding: 30px 35px 35px 30px;
+            background-color: #fff;
+            margin-bottom: 90px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            max-width: 370px;
+            position: relative;
+        }
+        &-text::before {
+            content: "NEWS";
+            position: absolute;
+            padding: 5px 30px;
+            background-color: #a3bbc8;
+            color: #fff;
+            border-radius: 50px;
+            top: -20px;
+        }
+        &-text {
+            font-size: 16px;
+            color: #262626;
+            @extend %raleway-600;
+            margin-bottom: 15px;
+        }
+        &-bottom {
+            font-size: 12px;
+            border-top: 1px solid #222933;
+            padding-top: 20px;
+        }
+        &-admin {
+            margin-left: 30px;
+        }
+    }
+    &__photo{
+        padding-bottom: 80px;
+        &-items {
+            display: flex;
+            justify-content: space-between;
 
+        }
+    }
+
+}
 
 
 
