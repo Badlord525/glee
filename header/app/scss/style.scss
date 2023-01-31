@@ -580,6 +580,32 @@
     }
 }
 
+.terms {
+    padding-top: 110px;
+    color: #243f4d;
+    margin-bottom: 110px;
+    &__item {
+        margin-bottom: 30px;
+    }
+    &__title {
+        @extend %rubik-500;
+        font-size: 24px;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+    &__list {
+        list-style: decimal-leading-zero;
+        list-style-position: outside;
+    }
+    &__text {
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 30px;
+        padding-left: 10px;
+    }
+}
+
 
 
 
