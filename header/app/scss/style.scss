@@ -1297,4 +1297,106 @@
     right: 60px;
 }
 
+.blog {
+    padding-top: 125px;
+}
+.blog-item {
+    
+    display: flex;
+}
+.blog-left {
+    max-width: 829px;
+    margin-right: 70px;
+    &__item {
+        margin-bottom: 55px;
+    }
+    &__images {
+        position: relative;
+        margin-bottom: 35px;
+    }
+    &__card {
+        position: absolute;
+        bottom: 0px;
+        background-color: #a3bbc8;
+        color: #fff;
+        padding: 20px 5px 20px 30px;
+        font-size: 12px;
+            span{
+                margin-right: 25px;
+            }
+    }
+    &__title {
+        font-size: 36px;
+        @extend %rubik-400;
+        margin-bottom: 20px;
+    }
+    &__link {
+        color: #333333;
+    }
+    &__text {
+        margin-bottom: 30px;
+    }
+    &__btn {
+        border: 1px solid #a3bbc8;
+        background-color: #fff;
+        color: #a3bbc8;
+        padding: 20px;
+        cursor: pointer;
+    }
+    &__btn::after {
+        content: url('../images/blog/arrow.png');
+        margin-left: 35px;
+    }
+}
+.blog-right {
+    &__form{
+        position: relative;
+        margin-bottom: 65px;
+    }
+    &__input {
+        width: 270px;
+        height: 40px;
+        border: 1px solid #edf1f4;
+        border-radius: 5px;
+        
+    }
+    &__btn {
+        position: absolute;
+        border: none ;
+        background-color: #edf1f4;
+        border-radius: 5px;
+        height: 40px;
+        padding: 0 15px;
+        right: 0;
+        cursor: pointer;
+    }
+}
+.posts {
+    padding-top: 50px;
+    width: 275px;
+    &-items {
+        padding-top: 30px;
+        display: flex;
+    }
+    &-item {
+        &__images {
+            margin-right: 20px;
+            width: 70px;
+        }
+        &__title {
+            font-size: 14px;
+            line-height: 20px;
+            @extend %rubik-400;
+        }
+        &__title-link {
+            color: #333333; 
+        }
+        &__text {
+            font-size: 12px;
+            color: #9a9a9a;
+            
+        }
+    }
+}
+
 @import 'media';
