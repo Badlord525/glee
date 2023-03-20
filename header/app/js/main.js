@@ -1,4 +1,5 @@
 $(function(){
+    
     $('.detalis-tabs__top-title').on('click', function(e){
         e.preventDefault();
         $('.detalis-tabs__top-title').removeClass('detalis-tabs__top-title--active');
@@ -7,6 +8,7 @@ $(function(){
         $('.detalis-tabs__content-item').removeClass('detalis-tabs__content-item--active');
         $($(this).attr('href')).addClass('detalis-tabs__content-item--active');
     })
+    
 
     $('.related-items').slick({
         slidesToShow: 4,
