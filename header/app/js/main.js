@@ -1,4 +1,12 @@
 $(function(){
+
+    $('.menu__btn').on('click', function(){
+        $('.menu__list').toggleClass('menu__list--active');
+    });
+
+    $('.shop__content-filter__button-new').on('click', function(){
+        $('.shop__filters').slideToggle();
+    });
     
     $('.detalis-tabs__top-title').on('click', function(e){
         e.preventDefault();

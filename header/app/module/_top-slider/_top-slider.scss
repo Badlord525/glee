@@ -1,0 +1,107 @@
+.top-slider {
+    &__bg {
+        background-image: url(../images/slider-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 220px;
+    }
+    &__inner{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    &__item {
+        display: flex !important;
+        justify-content: space-between;
+    }
+    &__title {
+       max-width: 500px;
+       font-size: 72px;
+       line-height: 70px;
+       color: $blue-color;
+       margin-bottom: 35px;
+       
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 30px;
+        max-width: 371px;
+        color: #436372;
+        margin-bottom: 25px;
+        
+    }
+    &__link {
+        background-color: #a3bbc8;
+        color: #fff;
+        font-size: 15px;
+        line-height: 12px;
+        padding: 20px 25px;
+        
+    }
+    &__images {
+        margin-top: 50px;
+        margin-bottom: 200px;
+    }
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        li{
+            button{
+                padding: 10px;
+                border-radius: 50%;
+                font-size: 10px;
+                line-height: 8px;
+                border: none;
+                background-color: #fde3cc;
+                margin: 0 5px 45px ;
+            }
+            &.slick-active{
+                button {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1200px){
+    .top-slider {
+        &__bg {
+            padding-top: 150px;
+        }
+        &__images {
+            width: 60%;
+        }
+    }
+}
+@media (max-width: 934px){
+    .top-slider {
+        &__item {
+            .top-slider__images {
+                display: none;
+            }
+        }
+        &__bg {
+            padding-top: 100px;
+        }
+        &__content {
+            margin-bottom: 40px;
+        }
+    }
+}
+@media (max-width: 480px){
+    .top-slider {
+        &__bg {
+            padding-top: 60px;
+        }
+        &__title {
+            max-width: 100%;
+            font-size: 36px; 
+            line-height: 38px;    
+            margin-bottom: 22px;
+        }
+        &__text {
+            font-size: 16px;
+            max-width: 100%;
+        }
+    }
+}
